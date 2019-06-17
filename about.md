@@ -12,7 +12,11 @@ title: About HulkCodeer
 	</p>
 	<h2>근무 이력</h2>
 	<ul>
-		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
+		<li>test
+			<ul>
+				<li>test2</li>
+			</ul>
+		</li>
   		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
   		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
   		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
