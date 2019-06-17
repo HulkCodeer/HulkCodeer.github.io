@@ -24,7 +24,7 @@ title: About HulkCodeer
   		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
   	</ul>
 	
-	<h2>최신 </h2>
+	<h2>최신 프로젝트</h2>
 	<ul>
 		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
   		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
