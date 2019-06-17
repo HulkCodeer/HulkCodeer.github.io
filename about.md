@@ -14,10 +14,10 @@ title: About HulkCodeer
 	<ul>
 		<li>얍컴퍼니
 			<ul>
-				<li>오더 헬프<a href="http://customizr.net/icons/"></li>
-				<li>스마트 오더<a href="http://customizr.net/icons/"></li>
-				<li>힘난다 주시브로스<a href="http://customizr.net/icons/"></li>
-				<li>비콘 라이브러리 <a href="http://customizr.net/icons/"></li>	
+				<li>오더 헬프<a href="http://customizr.net/icons/"></a></li>
+				<li>스마트 오더<a href="http://customizr.net/icons/"></a></li>
+				<li>힘난다 주시브로스<a href="http://customizr.net/icons/"></a></li>
+				<li>비콘 라이브러리 <a href="http://customizr.net/icons/"></a></li>	
 				<li>챗봇 에이전트</li>
 				<li>삼성 도슨트</li>
 				<li>스몸비</li>
