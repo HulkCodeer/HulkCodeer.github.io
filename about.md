@@ -6,8 +6,10 @@ title: About HulkCodeer
 <div class="post">
 	<h1 class="pageTitle">About HulkCodeer</h1>
 	<img src="{{ '/assets/img/hyunjin.jpeg' | prepend: site.baseurl }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
+	<p class="intro"> 안녕하세요. HulkCodeer의 관리자이자 개발자인 박현진 입니다.</p>
+	<p> 웹 개발 위주로 개발을 해오다가 모바일의 매력에 빠져 아이폰 개발을 하고 있는 개발자 입니다.
+항상 기본을 중시하고, 새로운 기술을 적용해보고 싶을땐 야근을 마다하지 않는 열정과 욕망의 개발자 이며, 긍정적인 마인드와 행복한 삶을 추구하는 사람입니다.
+	</p>
 	<h2>Features</h2>
 	<ul>
 		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
