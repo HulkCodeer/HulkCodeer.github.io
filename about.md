@@ -14,10 +14,10 @@ title: About HulkCodeer
 	<ul>
 		<li>얍컴퍼니
 			<ul>
-				<li>오더 헬프<a href="http://customizr.net/icons/"></a></li>
-				<li>스마트 오더<a href="http://customizr.net/icons/"></a></li>
-				<li>힘난다 주시브로스<a href="http://customizr.net/icons/"></a></li>
-				<li>비콘 라이브러리 <a href="http://customizr.net/icons/"></a></li>	
+				<li>오더 헬프<a href="https://apps.apple.com/kr/app/id1235994307?l=en">오더헬프</a></li>
+				<li>스마트 오더<a href="https://apps.apple.com/kr/app/smart-order/id1281381433">스마트오더</a></li>
+				<li>힘난다 주시브로스<a href="https://apps.apple.com/kr/app/himnanda-order-%ED%9E%98%EB%82%9C%EB%8B%A4-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EC%98%A4%EB%8D%94/id1455181156"></a></li>
+				<li>비콘 라이브러리 (스타벅스 사이렌오더, 삼성앱카드 스마트오더, 이니스프리, 성민네트웍스, 얍워크, 챗봇에이전트, )</a></li>	
 				<li>챗봇 에이전트</li>
 				<li>삼성 도슨트</li>
 				<li>스몸비</li>
