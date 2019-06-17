@@ -12,20 +12,32 @@ title: About HulkCodeer
 	</p>
 	<h2>근무 이력</h2>
 	<ul>
-		<li>test
+		<li>얍컴퍼니
+			<ul>
+				<li>오더 헬프<a href="http://customizr.net/icons/"></li>
+				<li>스마트 오더<a href="http://customizr.net/icons/"></li>
+				<li>힘난다 주시브로스<a href="http://customizr.net/icons/"></li>
+				<li>비콘 라이브러리 <a href="http://customizr.net/icons/"></li>	
+				<li>챗봇 에이전트</li>
+				<li>삼성 도슨트</li>
+				<li>스몸비</li>
+			</ul>
+		</li>
+  		<li>플랫폼 로캣티어
 			<ul>
 				<li>test2</li>
 			</ul>
 		</li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+  		<li>쿨리 코리아
+			<ul>
+				<li>test2</li>
+			</ul>
+		</li>
+  		<li>네오비엔에스
+			<ul>
+				<li>test2</li>
+			</ul>
+		</li>
   	</ul>
 	
 	<h2>최신 프로젝트</h2>
