@@ -42,7 +42,7 @@ title: About HulkCodeer
 				<li>하나은행 N닥터 유지보수</li>
 				<li>정부과제 GCM, SCCM 모바일 개발</li>
 				<li>농협 PUSH관리 사이트 개발</li>
-				<li><a href="http://www.neobns.com/jsp/partner.jsp"></a>네오비엔에스 홈페이지 개발</li>
+				<li><a href="http://www.neobns.com/jsp/partner.jsp">네오비엔에스 홈페이지 개발</a></li>
 				<li>ICheck IOS 앱 개발</li>
 				<li>효성캐피탈 차세대 모바일 개발</li>
 			</ul>
