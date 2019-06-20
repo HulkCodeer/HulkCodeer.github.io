@@ -18,7 +18,7 @@ title: About HulkCodeer
 				<li><a href="https://apps.apple.com/kr/app/smart-order/id1281381433">스마트오더</a>(iOS)</li>
 				<li><a href="https://apps.apple.com/kr/app/himnanda-order-힘난다-모바일-오더/id1455181156">힘난다 모바일 오더</a>(iOS)</li>
 				<li>비콘 라이브러리 (스타벅스 사이렌오더, 삼성앱카드 스마트오더, KIS, 이니스프리, 성민네트웍스, 얍워크, SPC )</li>	
-				<li><a href="https://play.google.com/store/apps/details?id=com.yap.chatbot.agent&hl=gsw">챗봇 에이전트(Android)</a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=com.yap.chatbot.agent&hl=gsw">챗봇 에이전트</a>(Android)</li>
 				<li>삼성 도슨트(Android)</li>
 				<li>스몸비(Android)</li>
 			</ul>
