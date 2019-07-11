@@ -76,7 +76,7 @@ HTTPCookieStorage.shared.cookieAcceptPolicy = HTTPCookie.AcceptPolicy.always // 
  }
 {% endhighlight %}
 
-쿠키에 대한 설정을 항상 허용으로 두며, PG사의 Domaing을 설정만 하고 나머지는 아무 데이터나 넣어두면 쿠키가 생셩 되면서,
+쿠키에 대한 설정을 항상 허용으로 두며, PG사의 Domaing을 설정만 하고 나머지는 아무 데이터나 넣어두면 쿠키가 생성 되면서,
 PG사의 웹뷰는 더이상 쿠키 허용이라고 뜨지 않는다!!!!
 
 결국 나는 부사수에게 잔소리를 하게 되었고, 부사수는 그때는 정말 집에 가고 싶었다고 한다....
