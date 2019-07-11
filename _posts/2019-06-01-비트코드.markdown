@@ -13,7 +13,7 @@ description: BitCode 배움기
  
  어느날 스타벅스 앱 평가에 노래 끊기는 현상에 대해 엄청난 VOC가 올라왔어요.
  
- 헐크코디어 : 오! 그 엄청난 스타벅스 사이렌 오더 라이브러리를 만져 볼 수 있는 시간인가!!
+ 헐크코디어 : 오! 그 엄청난 스타벅스 사이렌 오더 라이브러리를 만져 볼 수 있는 시간인가!!</p>
  
  하면서 저는 두근 대며 라이브러리를 열고 소스를 살펴봤습니다.
  많은 문제들이 있었지만, 수정될 수 있는 부분과 수정하지 못하는 부분을 나누고 일단
@@ -38,9 +38,9 @@ description: BitCode 배움기
  저는 바로 비트코드 관련된 셋팅을 했습니다.
  디버그 빌드시에는 maker만 해주고 실제 릴리즈 에서만 비트코드를 적용해준다고 하네요.
  
-Other C Flags 
-Debug : -fembed-bitcode-marker
-Release : -fembed-bitcode
+Other C Flags </p>
+Debug : -fembed-bitcode-marker</p>
+Release : -fembed-bitcode</p>
 
 음..간단하군
 
