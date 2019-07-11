@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Mutating 이란?"
+date:   2014-12-15
+description: Mutating에 대한 설명 입니다.
+---
+
+5년전에 iOS를 처음 접할때는 Objective-C란 언어를 쓰고 있었다.
+
+Objective-C에는 클래스란 개념이 개념이 없어서 Mutating이란 용어가 
+10없
+10
