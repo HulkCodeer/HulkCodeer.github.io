@@ -6,8 +6,9 @@ title: About HulkCodeer
 <div class="post">
 	<h1 class="pageTitle">About HulkCodeer</h1>
 	<img src="{{ '/assets/img/hyunjin.jpeg' | prepend: site.baseurl }}" alt="">
-	<p class="intro"> 안녕하세요. HulkCodeer의 관리자이자 개발자인 박현진 입니다.</p>
-	<p> 웹 개발 위주로 개발을 해오다가 모바일의 매력에 빠져 아이폰 개발을 하고 있는 개발자 입니다.
+	<p class="intro">
+		안녕하세요. HulkCodeer의 관리자이자 개발자인 박현진 입니다. 저의 캐리커쳐를 보고 놀라셨죠??저도 항상 놀랍니다....(여자친구가 그려준거라....어쩔 수 없어요...ㅠㅠ)</p>
+	<p> 저의 소개를 하자면 웹 개발 위주로 개발을 해오다가 모바일의 매력에 빠져 아이폰 개발을 하고 있는 개발자 입니다.
 항상 기본을 중시하고, 새로운 기술을 적용해보고 싶을땐 야근을 마다하지 않는 열정과 욕망의 개발자 이며, 긍정적인 마인드와 행복한 삶을 추구하는 사람입니다.
 	</p>
 	<h2>근무 이력</h2>
