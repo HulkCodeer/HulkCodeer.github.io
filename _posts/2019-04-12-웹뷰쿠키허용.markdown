@@ -49,5 +49,40 @@ description: 엄청난 삽질의 결과로 얻은 WKWebView의 쿠키 허용 방
 
 WKWebView의 쿠키는 코드상으로 따로 생성해줘야 한다고 한다..ㅠㅠ(3시간 동안 찾음)
 
-구글링 상에는 여러가지의 방법이 있었지만, 아마 이 방법이 가장 확실 한것 같다.
+구글링 상에는 여러가지의 방법이 있었지만, 이 프로젝트는 굉장히 특수한 상황이였다.
+일단 다이나믹 링크를 타고 들어온다는것!! 앱을 설치만 해두고 한번도 켜놓지 않은 상황에서 다이나믹 링크를 타고 들어오게 되면
+아직 앱이 실행도 안된 시점이며, 쿠키 또한 앱과는 별개로 생성 되기 때문에 앱 실행시 쿠키 허용하는 코드를 넣어야 하며
+AppDelegate에서 바로 쿠키를 생성해서 메모리에 적재시켜야 한다.
+
+아래의 코드는 존경하는 서버 개발자님이 도와줘서 같이 만든 코드이다...사람은 겸손해야 한다..
+PG사가 제공해주는 샘플 코드가 있지만, PG사는 아마 다이나믹 링크를 타고 들어와서 앱이 한번도 실행 된적이 없는 상태로 
+웹뷰를 호출 해보지 않았을 것이다.
+
+{% highlight swift %}
+HTTPCookieStorage.shared.cookieAcceptPolicy = HTTPCookie.AcceptPolicy.always // 쿠키 항상 허용 설
+
+ let ExpTime = TimeInterval(60 * 60 * 24 * 365)
+ let cookieProps: [HTTPCookiePropertyKey : Any] = [
+     HTTPCookiePropertyKey.domain: "pg.cnspay.co.kr",
+     HTTPCookiePropertyKey.path: "/",
+     HTTPCookiePropertyKey.name: "1",
+     HTTPCookiePropertyKey.value: "2",
+     HTTPCookiePropertyKey.secure: "TRUE",
+     HTTPCookiePropertyKey.expires: NSDate(timeIntervalSinceNow: ExpTime)
+ ]
+ 
+ if let cookie = HTTPCookie(properties: cookieProps) {
+     HTTPCookieStorage.shared.setCookie(cookie)
+ }
+{% endhighlight %}
+
+쿠키에 대한 설정을 항상 허용으로 두며, PG사의 Domaing을 설정만 하고 나머지는 아무 데이터나 넣어두면 쿠키가 생셩 되면서,
+PG사의 웹뷰는 더이상 쿠키 허용이라고 뜨지 않는다!!!!
+
+결국 나는 부사수에게 잔소리를 하게 되었고, 부사수는 그때는 정말 집에 가고 싶었다고 한다....
+
+그래 워라밸 중요하지!(나도 집에 가고 싶어ㅠㅠ 너때문에 밤 11시까지 야근했단말야 으아아앙)
+
+부사수보다 나의 실력이 점점 느는것 같아 고민인 하루였다...
+
 
