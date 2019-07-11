@@ -16,3 +16,41 @@ Objective-C에는 클래스란 개념이 개념이 없어서 Mutating이란 용�
 
 구조체나 열거형이 밸류 타입이란것은 이미 자기 자신이 값인데 자기자신을 바꾸라니(?) 어찌보면 이상한
 명령일 수 있으나, Mutating이란 키워드는 그것을 가능하게 한다는 것이다.
+
+프로퍼티 변경 불가능한 구조체 부터 살펴 보도록 하자.
+
+{% highlight swift %}
+struct Name {
+  var name: String = "박현진"
+  
+  func changeName(_ changeName: String) {
+    name = changeName
+  }
+}
+
+var test = Name(name: "헐크코디어")
+test.changeName(changeName: "헐크")
+{% endhighlight %}
+
+xCode님께서 갑자기 화를 내실 것이다..이상한짓 하지말라고...
+
+네...ㅠㅠ 수정하겠습니다
+
+{% highlight swift %}
+struct Name {
+  var name: String = "박현진"
+  
+  mutatin func changeName(_ changeName: String) {
+    name = changeName
+  }
+}
+
+var test = Name(name: "헐크코디어")
+test.changeName(changeName: "헐크")
+{% endhighlight %}
+
+xCode님께서 좋아하시는 코드를 대령 했습니다.
+
+음...좋다...통과
+
+위의 코드는 Enum에서도 똑같이 적용된다.
