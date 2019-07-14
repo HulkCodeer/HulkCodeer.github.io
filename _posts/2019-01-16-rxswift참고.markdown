@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "RxSwift 참고 URL"
+date:   2014-12-15
+description: 나중에 포스트를 위한 RxSwift 참고 URL 목록 입니다.
+---
+
+곰튀김님 유튜브 RsSwift(4시간)
+https://www.youtube.com/watch?v=w5Qmie-GbiA&t=2322s
+
+공식 ReactiveX URL
+https://github.com/ReactiveX/RxSwift
+
+곰튀김님 유튜브 채널
+https://www.youtube.com/channel/UCsrPur3UrxuwGmT1Jq6tkQw
+
+RxSwfit와 MVVM 
+https://pilgwon.github.io/blog/2018/10/09/Creating-an-iOS-app-with-MVVM-and-RxSwift-in-Minutes.html
