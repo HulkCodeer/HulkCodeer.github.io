@@ -40,7 +40,7 @@ xCode님께서 갑자기 화를 내실 것이다..이상한짓 하지말라고..
 struct Name {
   var name: String = "박현진"
   
-  mutatin func changeName(_ changeName: String) {
+  mutating func changeName(_ changeName: String) {
     name = changeName
   }
 }
