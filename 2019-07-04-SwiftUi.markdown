@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "SwiftUi 포스트 준비?"
+date:   2019-07-04
+description: iOS13 및 SwiftUi 포스트 준비 중
+---
+
+참고 URL : https://www.youtube.com/watch?v=IIDiqgdn2yo  
+https://www.youtube.com/watch?v=xaHIBS6u4Rg  
+https://www.youtube.com/watch?v=xT4wGOc2jd4&t=678s  
