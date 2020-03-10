@@ -4,3 +4,84 @@ title:  "DispatchGroup 이란?"
 date:   2020-03-10
 description: DispatchGroup 배움기
 ---
+
+중고나라 앱 유지보수 중 Function Await 기능이 필요하게 되어 구글링을 해본 결과
+
+DispatchGroup 이라는 기능을 알게 되었다.
+
+아래의 코드는 group.enter()로 진입점을 알려주고, group.leave()로 탈출점을 알려주게 된다.
+
+leave()가 되지 않는다면 이 함수 로직을 다시 호출 한다해도 반응하지 않게 된다.
+
+{% highlight swift %}
+let group = DispatchGroup()
+        
+if var _pushModel = self.pushFollowModel.response[safe: modelIndex] {
+    group.enter()
+    let originalSwitchValue = _pushModel.alarmYn
+    _pushModel.alarmYn = cell.followPushSwitch.isOn == true ? 1:0
+    self.pushFollowModel.httpPutSwitchingFollowType(storeSeq: _pushModel.storeSeq,
+                                                    type: PushAlarim.switchValue(val: _pushModel.alarmYn),
+                                                    success: { _ in
+                                                        group.leave()
+        }, failure: { error in
+            _pushModel.alarmYn = originalSwitchValue
+            cell.followPushSwitch.isOn = _pushModel.alarmYn == 1 ? true: false
+            group.leave()
+    })
+}
+{% endhighlight %}
+
+
+아래는 구글링 해서 참고한 enter 부터 leave까지 비동기 처리 하는 작업에 대해 wait하도록 만든 참고 소스이다.
+
+{% highlight swift %}
+func dispatchGroupSyncTest()
+  let group = DispatchGroup.init()
+  let queue = DispatchQueue.global()
+  
+  group.enter()
+  queue.async {
+    Thread.sleep(forTimeInterval: self.sleepTime)
+    group.leave()
+  }
+  
+  group.enter()
+  queue.async {
+    Thread.sleep(forTimeInterval: self.sleepTime)
+    group.leave()
+  }
+  
+  let result = group.wait(timeout: .distantFuture)
+  print("job complete sync : \(result)")
+  print("job enter finished")
+}
+{% endhighlight %}
+
+enter, leave를 사용하지 않고 사용하는 방법도 있는데, 이방법은 각각의 비동기 작업을 Group에 넣고
+
+Group 의 notifi를 받게 되면, 비동기 작업 자체가 다 끝나야지만 notify가 오기때문에 enter, leave를
+
+사용하지 않고도 wait 기능이 되게 된다.
+
+참고한 코드는 아래와 같다.
+
+{% highlight swift %}
+func dispatchGroupSyncTest()
+  let group = DispatchGroup.init()
+  let queue = DispatchQueue.global()
+  
+  queue.asnyc(group: group) {
+    Thread.sleep(forTimeInterval: self.sleepTime)
+  }
+  
+  queue.async(group: group, execute: {
+    Thread.sleep(forTimeInterval: self.sleepTime)
+  })
+  
+  qroup.notify(queue: queue) {
+    print("simple group complete async")
+  }
+  print("job enter finished")
+}
+{% endhighlight %}
